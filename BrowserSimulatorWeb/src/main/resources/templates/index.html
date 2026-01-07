@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser History Simulator - DSA Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-window-maximize"></i> Browser History Simulator</h1>
+                <p class="subtitle">Data Structures & Algorithms - Stack Implementation</p>
+            </div>
+        </header>
+
+        <!-- Main Browser Interface -->
+        <div class="browser-container">
+            <!-- Navigation Controls -->
+            <div class="nav-controls">
+                <button id="backBtn" class="nav-btn" title="Go Back">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button id="forwardBtn" class="nav-btn" title="Go Forward">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button id="homeBtn" class="nav-btn" title="Go Home">
+                    <i class="fas fa-home"></i>
+                </button>
+                
+                <div class="url-input-container">
+                    <input type="text" id="urlInput" placeholder="Enter URL (e.g., google.com)" class="url-input">
+                    <button id="visitBtn" class="visit-btn">
+                        <i class="fas fa-external-link-alt"></i> Visit
+                    </button>
+                </div>
+            </div>
+
+            <!-- Browser Display -->
+            <div class="browser-display" id="browserDisplay">
+                <div class="browser-header">
+                    <div class="browser-tabs">
+                        <div class="tab active">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentTitle">Home</span>
+                        </div>
+                    </div>
+                    <div class="browser-actions">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="browser-content">
+                    <div class="welcome-content">
+                        <h2>Welcome to Browser History Simulator!</h2>
+                        <p>Enter a URL above to start browsing and experience stack-based navigation.</p>
+                        <div class="features">
+                            <div class="feature-card">
+                                <i class="fas fa-history"></i>
+                                <h3>Back/Forward Navigation</h3>
+                                <p>Implemented using Stack data structure</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-chart-bar"></i>
+                                <h3>Visit Tracking</h3>
+                                <p>Monitor your browsing history</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-cogs"></i>
+                                <h3>DSA Implementation</h3>
+                                <p>Real-time stack operations visualization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats and History Panel -->
+        <div class="stats-panel">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <div class="stat-info">
+                        <h3 id="totalVisits">0</h3>
+                        <p>Total Visits</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-undo"></i>
+                    <div class="stat-info">
+                        <h3 id="backCount">0</h3>
+                        <p>Back Operations</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-redo"></i>
+                    <div class="stat-info">
+                        <h3 id="forwardCount">0</h3>
+                        <p>Forward Operations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-sections">
+                <div class="history-column">
+                    <h3><i class="fas fa-history"></i> Back Stack</h3>
+                    <div class="history-list" id="backStack">
+                        <!-- Back stack items will be populated here -->
+                    </div>
+                </div>
+                
+                <div class="history-column">
+                    <h3><i class="fas fa-forward"></i> Forward Stack</h3>
+                    <div class="history-list" id="forwardStack">
+                        <!-- Forward stack items will be populated here -->
+                    </div>
+                </div>
+                
+                <div class="history-column">
+                    <h3><i class="fas fa-chart-line"></i> Visit Counts</h3>
+                    <div class="history-list" id="visitCounts">
+                        <!-- Visit counts will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

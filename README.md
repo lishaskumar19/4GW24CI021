@@ -33,6 +33,9 @@ Inheritance and Polymorphism
 Exception Handling
 Multithreading
 Packages and Interfaces
+OuterInner Class
+Matrix
+Abstract Class
 Programs are written in Java and follow standard lab guidelines.
 
 --> DSA Workshop

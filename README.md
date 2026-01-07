@@ -188,6 +188,22 @@ Practice control structures
 
 Improve debugging skills
 
+# JAVA Lab programs
+This section contains Java lab programs related to:
+
+Object-Oriented Programming concepts
+Classes and Objects
+Inheritance and Polymorphism
+Exception Handling
+Multithreading
+Packages and Interfaces
+OuterInner Class
+Matrix
+Abstract Class
+Programs are written in Java and follow standard lab guidelines.
+
+
+
 # Executable Files (.exe)
 
 Purpose:

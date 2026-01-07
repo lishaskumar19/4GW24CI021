@@ -192,14 +192,23 @@ Improve debugging skills
 This section contains Java lab programs related to:
 
 Object-Oriented Programming concepts
+
 Classes and Objects
+
 Inheritance and Polymorphism
+
 Exception Handling
+
 Multithreading
+
 Packages and Interfaces
+
 OuterInner Class
-Matrix
+
+Matrix Addition
+
 Abstract Class
+
 Programs are written in Java and follow standard lab guidelines.
 
 

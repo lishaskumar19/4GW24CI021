@@ -1,0 +1,160 @@
+---------DAY 1-------------
+#->preprosesor
+.h->only function(used in development)
+.c->gives defination or implementation
+<>->we can replace with "" search it in entire path
+& -> when the value is boolean , Long And (&&)
+  -> numeric values, bitwise and (&)
+  -> unary 
+ ------------------ DSA WORKSHOP 2K25-----------------
+DSA WORKSHOP(2K25)
+  1.create a repo for our DSA learning
+  2.create PAT with no expiry and mailed it to myself
+  3.Run the 2 configuration commands(git config --global user.name and user.email)
+  4.clone the repo to our laptop.
+  5.repo url:your repo url
+  6.template:https://PAT@url
+DOWNLOAD MINGW(sourceforge.net)
+  1.while installating , you get the list of s/w
+  2.on top left,click basic setup
+  3.select mingw base 32
+  4.select the checkbox and click mark for installation
+  3.Select gcc g++
+  6.select the checkbox and click mark for installation 
+  5.on left top corner, click installation and click apply changes and click apply
+  6.now the s/w will install
+  7.at the end, close the insatallation window
+
+outstanding20 mysuru(youtube)
+    
+------------DAY 2-------------------
+SRP 
+cohersion and coupling
+Data Structure 
+array as an DS where it is easy to use and implement
+Need of invention of
+-------OFFICIAL DOCUMENTATION-------
+C/C++ MSDN, IBM Docs
+PYTHON: docs.python.com
+JAVA:docs.oracle.com
+HTML,CSS,JS: dev.mozilla
+
+nptel
+CDAC
+MIT Open University
+JAVA:1z0829,1z0830(CERTIFICATION)
+
+-----------POINTER--------------
+eg:
+float a[12]
+&a--address of the array
+a--address of the 1st element
+*a--value of 1st element
+-> EVERY ADDRESS HAS A PROPERTY "SIZE OF THE DT PROPERTY"
+-> size of the pointer is always 4byte in windows(depends on os) on mac and linux(8 byte)
+a[0]=value 1.0 =address 1401
+a[o]=1401
+a[1]=1405
+a[2]=1409
+Q:address of first value of a[1]
+1402
+Q:address of a[1]
+1405
+a[1]=*(a+1)==value at (1401+1)=v at(1405)=2.0
+a[0]=*(a+0) =*a =v at (1401)=1.0 ((a+0) 0 means jump to no element)
+--TYPES OF POINTERS--
+NULL POINTER-> pointer which is not pointing to any location in memory
+WILD POINTER: An unintialized pointer which has some junk address.
+CONSTANT POINTER: A pointer which pointes always to the same variable.
+POINTER TO A CONSTANT:a pointer that can point to some other variable, but it cannot modify the value of the constant pointer to a constant
+CONSTANT POINTER TO A CONSTANT:
+dangling pointer:
+
+
+------ARRAY------
+array in C and C++ are PREMITIVE(built-in)
+1D ARRAY
+&a--address of the array
+a--address of the 1st element
+*a--value of 1st element
+2D ARRAY
+&a--address of 2d array
+a--address of the 1st 1D ARRAY
+*a--address  of 1st element in 1st row
+**a value of 1st element of 1st row in the 2D array
+
+-------STRING-----
+group of character that make up one data.
+Unlike numareic arrays, where we must pass the address of the list elemrnt and also its size to the function , in case of string  , we need not pass the size of the setup
+
+STRING HANDLING FUNCTION:
+
+ strlen()
+-> strlen(*char)
+->int strlen(char const*);
+m      y     s     u     r     u   \0
+0      1     2     3     4     5    6
+701    702   703   704   705   706
+--> char size is 1BYTE
+-> strlen(const*char): constant pointer points to same variable but it can cange value of the variable
+-> strlen(const*char const):constant pointer points to constant variable
+
+stsrcpy()
+char* strcpy(destination,source)
+char* strcpy(char*,char const*)
+
+strchr() : find first occurence of string
+strrrchr():find last occurence of string
+strcat(): string concatination uses length
+strncpy():
+strtok():
+stricmp():
+strcmp():0 returns if two string same
+
+int strcmp(char const*, char const*)
+
+-----TRACING of str program:------
+main a   n   d  r  a \0
+     0   1  2  3  4  5  6  7  8  9  10 
+   101
+sub  p   r   a   d  e  s  h  \0
+     0   1  2   3  4  5  6   7
+    201 
+for (; source[j] !='\0'; j++)  // string+1=102 becoz char is 1 byte
+-> value of destinaton is 101
+
+data fron os-> program is send as string
+getf-> consider space as part of data
+scanf-> doesn't consider space**
+true-> condition holds
+false-> condition fails
+
+----------PROBLEMS STATEMENT SOLVING---------------
+1. Read the problem. Understand the problem. Write down the I/P data. Assertain the O/P. Isolate unwanted information and data. Focus on the relavant information.
+
+2. Find the solution with trial and error basis or using a specific logic or formula or mathematically etc.
+
+3. Now write down the Algorithm. Step by step procedure. Each step must be simple (SRP) and it must finite.
+
+4. Pseudocode
+
+5. Code it
+-----------------------------------
+Normal Array:
+Size is fixed by the programmer (coding).
+Size cannot change later.
+Deletion depends on storage class
+
+Dynamic Array:
+Size is fixed by the user (during run time).
+Size cannot change later.
+Deletion can be done by the user.
+
+void* malloc(size_t);
+
+int* malloc(40);
+int* maaloc(sizeof(int) * 10);
+scanf(size);
+int* maaloc(sizeof(int) * size);
+
+It allocates memory in Heap for what we are requesting.

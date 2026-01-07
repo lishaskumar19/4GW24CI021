@@ -176,7 +176,7 @@ Concept: Advanced OS concepts
 
 Combines multiple system calls
 
-# Program Files (pg1.c – pg8.c)
+# DSA Program Files (pg1.c – pg8.c)
 
 These files represent general lab programs or practice problems.
 
